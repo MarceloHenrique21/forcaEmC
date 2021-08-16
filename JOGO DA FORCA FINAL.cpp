@@ -4,7 +4,7 @@
 #include <string.h>
 
 
-
+// AINDA  ESCREVENDO
 
 void forca(int progresso){
 
@@ -134,7 +134,7 @@ int main() {
          int n,i;
      
      
-         printf("                    OL¡ JOGADOR, ESCOLHA O QUE QUER FAZER");	
+         printf("                    OL√Å JOGADOR, ESCOLHA O QUE QUER FAZER");	
          printf("\n\n\n\n");
          printf("                        1- JOGAR \n");
          printf("                        2- RANK \n");
@@ -144,7 +144,7 @@ int main() {
          printf("\n\n");
          
          
-         printf("                                ESCOLHA UMA OP«√O: ");	
+         printf("                                ESCOLHA UMA OP√á√ÉO: ");	
          scanf("%d", &n);
  
     switch (n){
@@ -154,7 +154,7 @@ int main() {
          system("cls"); 
          
         
-         printf("                       Digite uma palavra SEM ESPA«O: ");
+         printf("                       Digite uma palavra SEM ESPA√áO: ");
          scanf("%s", &palavra);
          printf("              Voce digitou: %s", palavra);
          printf("\n\n\n\n\n");
