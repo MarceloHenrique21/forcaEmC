@@ -1,0 +1,217 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+#include <string.h>
+#include <windows.h>
+
+// variaveis globais 
+
+         int n,i;
+         int erros = 0;
+         char palavra[21];
+         char palavraAcertos [15];
+         char letra;
+         
+
+
+void forca(int progresso){
+
+     if(progresso==0){
+                   
+    printf("      Bem vindo ao jogo da forca");
+    printf("\n\n");             
+    printf("  _______           \n");
+	printf(" |/      |          \n");
+	printf(" |                  \n");
+	printf(" |                 \n" );
+	printf(" |                 \n" );
+	printf(" |                 \n" );
+	printf(" |                  \n");
+	printf("_|___               \n");
+	printf("\n\n");   
+    
+                      }else if (progresso==1){
+      
+    printf("\n\n");             
+    printf("  _______           \n");
+	printf(" |/      |          \n");
+	printf(" |       0          \n");
+	printf(" |                 \n" );
+	printf(" |                 \n" );
+	printf(" |                 \n" );
+	printf(" |                  \n");
+	printf("_|___               \n");
+	printf("\n\n");   
+                       }else if (progresso==2){
+      
+    printf("\n\n");             
+    printf("  _______           \n");
+	printf(" |/      |          \n");
+	printf(" |       0          \n");
+	printf(" |       |         \n" );
+	printf(" |                 \n" );
+	printf(" |                 \n" );
+	printf(" |                  \n");
+	printf("_|___               \n");
+	printf("\n\n");  
+	
+	                 }else if (progresso==3){
+      
+    printf("\n\n");             
+    printf("  _______           \n");
+	printf(" |/      |          \n");
+	printf(" |       0          \n");
+	printf(" |      -|         \n" );
+	printf(" |                 \n" );
+	printf(" |                 \n" );
+	printf(" |                  \n");
+	printf("_|___               \n");
+	printf("\n\n");  
+                   
+                      }else if (progresso==4){
+      
+    printf("\n\n");             
+    printf("  _______           \n");
+	printf(" |/      |          \n");
+	printf(" |       0          \n");
+	printf(" |      -|-         \n" );
+	printf(" |                 \n" );
+	printf(" |                 \n" );
+	printf(" |                  \n");
+	printf("_|___               \n");
+	printf("\n\n");  
+                   
+                     }else if (progresso==5){
+      
+    printf("\n\n");             
+    printf("  _______           \n");
+	printf(" |/      |          \n");
+	printf(" |       0          \n");
+	printf(" |      -|-          \n" );
+	printf(" |      /          \n" );
+	printf(" |                 \n" );
+	printf(" |                  \n");
+	printf("_|___               \n");
+	printf("\n\n");  
+	
+	
+	                   }else if (progresso==6){
+      
+    printf("\n\n");             
+    printf("  _______           \n");
+	printf(" |/      |          \n");
+	printf(" |       0          \n");
+	printf(" |       -         \n");
+	printf(" |      -|-          \n" );
+	printf(" |      / \         \n" );
+	printf(" |                 \n" );
+	printf(" |                  \n");
+	printf("_|___               \n");
+	
+	printf("                                    VOCE PERDEU");
+	printf("\n\n");  
+	
+	            
+                   
+                   }
+ }
+
+
+void comeco(){
+   
+         printf("\n\n\n\n\n");
+         
+         printf("Digite uma palavra: ");
+         scanf("%s", palavra);
+	  	 printf("\n");
+         printf("Voce digitou: %s", palavra);
+         printf("\ndelay de 4 segundos");
+         Sleep(4000);
+         system("cls"); 
+         
+       
+         printf("\n\n");
+         printf("       Sua palavra possui %i letras", strlen(palavra));
+         printf("\n\n\n\n\n");
+         
+    
+     }
+ 
+// ------
+int main() {
+	
+	setlocale(LC_ALL, "portuguese");
+	
+     
+         printf("     OLÁ JOGADOR, ESCOLHA O QUE QUER FAZER");	
+         printf("\n\n\n\n");
+         printf("      1- JOGAR \n");
+         printf("       2- RANK \n");
+         printf("        3- SCORE \n");
+         printf("         4- CREDITOS\n");
+         printf("          5- SAIR\n");
+         printf("\n\n");
+         
+         
+         printf("       ESCOLHA UMA OPÇÃO: ");	
+         scanf("%d", &n);
+ 
+    switch (n){
+        
+        
+       case 1: 
+       
+		   system("cls"); 
+                          
+                          
+                          
+                    comeco();
+        
+                    forca (0);
+       
+        break;
+              
+            
+   case 2: 
+        system("cls"); 
+        printf("      AQUI ESTA O RANKING DOS JOGADORES:");
+        printf("\n\n\n\n\n");
+        break;
+        
+          
+   case 3: 
+        system("cls");
+        printf("                            AQUI ESTA O SEU SCORE: ");
+        printf("\n\n\n\n\n");
+        break;
+        
+            
+   case 4: 
+        system("cls"); 
+        printf("      JOGO FEITO POR:  EU :)");
+        printf("\n\n\n\n\n");
+        break;
+        
+        
+   case 5: 
+        system("cls"); 
+      	system("pause");
+        break;
+        
+        
+ 
+        default: 
+                 printf("\n\n\n\n\n");
+                 
+                 printf("                     DIGITE UM NUMERO VALIDO!!!!!!");
+                 printf("\n\n\n\n\n");
+        
+        }
+  
+
+
+		system("pause");
+	return (0);
+}
+
+  
